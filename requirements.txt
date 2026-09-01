@@ -1,0 +1,20 @@
+# Warehouse + serving
+duckdb>=1.0.0
+pandas>=2.0.0
+gradio>=4.0.0
+fastapi>=0.110.0
+uvicorn>=0.27.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+
+# Inference
+transformers>=4.40.0
+torch>=2.0.0
+accelerate>=0.27.0
+huggingface-hub>=0.20.0
+
+# Optional: frontier baseline in the eval
+anthropic>=0.40.0
+
+# Fine-tuning happens in Colab (see train.ipynb); unsloth/trl/peft are not
+# installed here because they need CUDA and this project serves on CPU.
